@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Bold.woff2") format("woff2"), url("fonts/Avenir-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Regular.woff2") format("woff2"), url("fonts/Avenir-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/Avenir-Light.woff2") format("woff2"), url("fonts/Avenir-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: lighter;
+}
+
+@font-face {
+  font-family: "Quattrocento";
+  src: url("fonts/Quattrocento-Bold.woff2") format("woff2"), url("fonts/Quattrocento-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Quattrocento";
+  src: url("fonts/Quattrocento-Regular.woff2") format("woff2"), url("fonts/Quattrocento-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* menu burger  */
+
+nav {
+  position: fixed;
+  background-color: black;
+  height: 100vh;
+  width: 100vw;
+  transition: top  1s;
+  top: -100%;
+  opacity: 0.7;
+}
+
+nav.is-open {
+  height: 100vh;
+  width: 100vw;
+  border-radius: 0;
+  right: 0;
+  top: 0; 
+  z-index: 1;
+}
+
+.open {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.open-icon,
+.open-icon::before,
+.open-icon::after {
+  width: 30px;
+  height: 2px;
+  background: black;
+  box-shadow: 0px 0px 5px white;
+}
+
+.open-icon::before,
+.open-icon::after {
+  content: '';
+  display: block;
+  transition: transform 0.3s;
+}
+
+.open-icon::before {
+  transform: translateY(-6.5px);
+}
+
+.open-icon::after {
+  transform: translateY(4px);
+}
+
+nav.is-open .open-icon {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+nav.is-open .open-icon::before {
+  transform: translateY(0px) rotate(45deg);
+  margin-bottom: 2px;
+  background: white;
+  box-shadow: none;
+}
+
+nav.is-open .open-icon::after {
+  transform: translateY(-3.7px) rotate(-45deg);
+  background: white;
+  box-shadow: none;
+}
+
+ul {
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: transform 0.5s, opacity 0.3s;
+}
+
+nav.is-open ul {
+  transform: none;
+  opacity: 1;
+}
+
+nav:not(.is-open) ul {
+  pointer-events: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  font-size: 20px;
+  text-transform: uppercase;
+  font-family: 'Quattrocento', serif;
+  color: white;
+  margin: 15px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  height: 65px;
+  box-shadow: 0px 0.2px 25px silver;
+}
+
+.logo {
+  height: 65px;
+  width: auto;
+}
+
+h1 {
+  font-size: 24px;
+  margin: 30px 15px 30px 15px;
+  text-align: center;
+  font-family: "Quattrocento";
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 15px;
+  margin: 30px 15px 30px 15px;
+  text-align: justify;
+  font-family: "Avenir";
+  font-style: oblique;
+  line-height: 19px;
+}
+
+.tweet1div, .tweet2div {
+  display: flex;
+  justify-content: center;
+}
+
+.tweet1, .tweet2 {
+  width: 85%;
+  height: 85%;
+}
+
+.description {
+  font-size: 14px;
+  margin: 30px 19px 30px 19px;
+  text-align: justify;
+  font-family: "Avenir";
+  font-style: normal;
+  line-height: 19px;
+}
+
+.messagefin {
+  text-align: center;
+  margin: 30px 15px 30px 15px;    
+  font-size: 14px;    
+  font-family: "Avenir";
+  font-weight: bold;
+  font-style: normal;
+  line-height: 19px;
+}
+
+h3 {
+  font-size: 13px;
+  text-decoration: underline;
+  color: black;
+  display: flex;
+  margin-right: 10px;
+  width: 80px;
+  height: 10px;
+}
