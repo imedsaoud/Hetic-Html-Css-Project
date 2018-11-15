@@ -355,8 +355,7 @@
 
     .image_article a img {
         width: 80%;
-        margin-left: auto;
-        margin-right: auto;
+        padding: 90px;
     }
    
         /* nav bar */
