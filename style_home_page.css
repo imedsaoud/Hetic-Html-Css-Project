@@ -95,6 +95,10 @@ section {
   margin: 30px 15px 30px 15px;
 }
 
+.image-article { 
+  width: 500px;
+}
+  
 .description {
   font-size: 14px;
   margin: 30px 19px 30px 19px;
