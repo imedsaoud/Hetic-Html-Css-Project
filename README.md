@@ -1,2 +1,2 @@
 # hetic-w1p2021-07-azote
-lol
+https://quechua-project.netlify.com
