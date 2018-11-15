@@ -74,14 +74,14 @@
         min-height: 65vh;
     }
 
-    .produit_box, .article_box {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        align-items: center;
-        margin: 5px 15px 5px 15px;
-    }
+   .produit_box, .produit_box_2, .article_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 5px 15px 5px 15px;
+}
 
     .button {
         background-color: black;
@@ -318,6 +318,13 @@
         max-width: 1080px;
         margin: 0 auto;
     }
+    
+    .produit_box_2{
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  max-width: 1080px;
+  margin: 0 auto;
+}
 
     h2.desk {
         margin-bottom: 60px;
