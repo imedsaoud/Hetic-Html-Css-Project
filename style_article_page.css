@@ -213,3 +213,36 @@ h2 {
   color: black;
   margin: 15px 19px 30px 0;   
 }
+
+@media (min-width: 500px) {
+
+.tweet1 {
+  width: 50%;
+}
+
+.tweet2 {
+  width: 50%;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 120%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.description {
+  font-size: 20px;
+  line-height: 120%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.fin {
+  font-size: 22px; 
+  line-height: 120%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+  
+}
