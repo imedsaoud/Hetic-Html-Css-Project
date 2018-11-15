@@ -346,5 +346,17 @@
     .pimg2, .pimg3, .pimg4, .pimg5 {
         min-height: 400px;
     }
+}
+
+    .description p {
+        width: 100%;
+        line-height: 100%;
+    }
+
+    .image_article a img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
    
         /* nav bar */
