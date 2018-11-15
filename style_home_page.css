@@ -37,16 +37,17 @@ body {
   margin: 0;
 }
 
+
+
   /* menu burger  */
 
 nav {
   position: fixed;
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.7);
   height: 100vh;
   width: 100vw;
   transition: top  1s;
-  top: -100%;
-  opacity: 0.7;
+  top: -120%;
 }
 
 nav.is-open {
@@ -146,6 +147,8 @@ li {
   color: white;
   margin: 15px;
 }
+
+/* Fin menu burger */
 
 h2 {
   font-family: "Quattrocento";

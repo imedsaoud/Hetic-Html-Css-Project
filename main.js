@@ -12,9 +12,3 @@ links.forEach(link => {
 });
 
 
-var waypoint = new Waypoint({
-  element: document.getElementsByid('logo_id'),
-  handler: function(direction) {
-    document.getElementsByid('logo_id').classList.add('is-reached')
-  }
-})
