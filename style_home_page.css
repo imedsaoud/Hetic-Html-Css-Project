@@ -351,6 +351,7 @@
     .description p {
         width: 100%;
         line-height: 100%;
+        margin: 40px;
     }
 
     .image_article a img {
