@@ -1,339 +1,346 @@
-@font-face {
-  font-family: "Avenir";
-  src: url("fonts/Avenir-Bold.woff2") format("woff2"), url("fonts/Avenir-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
+    @font-face {
+        font-family: "Avenir";
+        src: url("fonts/Avenir-Bold.woff2") format("woff2"), url("fonts/Avenir-Bold.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+    }
 
-@font-face {
-  font-family: "Avenir";
-  src: url("fonts/Avenir-Regular.woff2") format("woff2"), url("fonts/Avenir-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+    @font-face {
+        font-family: "Avenir";
+        src: url("fonts/Avenir-Regular.woff2") format("woff2"), url("fonts/Avenir-Regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
 
-@font-face {
-  font-family: "Avenir";
-  src: url("fonts/Avenir-Light.woff2") format("woff2"), url("fonts/Avenir-Light.woff") format("woff");
-  font-weight: normal;
-  font-style: lighter;
-}
+    @font-face {
+        font-family: "Avenir";
+        src: url("fonts/Avenir-Light.woff2") format("woff2"), url("fonts/Avenir-Light.woff") format("woff");
+        font-weight: normal;
+        font-style: lighter;
+    }
 
-@font-face {
-  font-family: "Quattrocento";
-  src: url("fonts/Quattrocento-Bold.woff2") format("woff2"), url("fonts/Quattrocento-Bold.woff") format("woff");
-  font-weight: bold;
-  font-style: normal;
-}
+    @font-face {
+        font-family: "Quattrocento";
+        src: url("fonts/Quattrocento-Bold.woff2") format("woff2"), url("fonts/Quattrocento-Bold.woff") format("woff");
+        font-weight: bold;
+        font-style: normal;
+    }
 
-@font-face {
-  font-family: "Quattrocento";
-  src: url("fonts/Quattrocento-Regular.woff2") format("woff2"), url("fonts/Quattrocento-Regular.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
+    @font-face {
+        font-family: "Quattrocento";
+        src: url("fonts/Quattrocento-Regular.woff2") format("woff2"), url("fonts/Quattrocento-Regular.woff") format("woff");
+        font-weight: normal;
+        font-style: normal;
+    }
 
-.logo_box {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
+    .logo_box {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
 
-.description_p1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 45px;
-}
+    .description_p1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding: 45px;
+    }
 
-h2 {
-  font-family: "Quattrocento";
-  font-weight: bold;
-}
+    h2 {
+        font-family: "Quattrocento";
+        font-weight: bold;
+    }
 
-h2.mob {
-  margin-bottom: 30px;
-}
-.product {
-  width: 150px;
-}
+    h2.mob {
+        margin-bottom: 30px;
+    }
+
+    .product {
+        width: 150px;
+    }
+
+    p {
+        font-family: "Avenir";
+        font-size: 14px;
+    }
+
+    .product__desc p {
+        margin:30px 0px 30px 0px;
+    }
+
+    section {
+        min-height: 65vh;
+    }
+
+    .produit_box, .article_box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin: 5px 15px 5px 15px;
+    }
+
+    .button {
+        background-color: black;
+        color: white;
+        display: inline-block;
+        padding: 15px 25px
+    }
+
+    .titre_article {
+        margin: 30px 15px 30px 15px;
+    }
+
+    .image-article { 
+        width: 500px;
+    }
+
+    .description {
+        font-size: 14px;
+        margin: 30px 19px 30px 19px;
+        text-align: justify;
+        font-family: "Avenir";
+        font-style: normal;
+        line-height: 19px;
+    }
+
+        /* menu burger  */
+
+    nav {
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+        width: 100vw;
+        transition: top  1s;
+        top: -120%;
+    }
+
+    nav.is-open {
+        height: 100vh;
+        width: 100vw;
+        border-radius: 0;
+        right: 0;
+        top: 0; 
+        z-index: 1;
+    }
+
+    .open {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        bottom: 15px;
+        left: 15px;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .open-icon,
+    .open-icon::before,
+    .open-icon::after {
+        width: 30px;
+        height: 2px;
+        background: black;
+        box-shadow: 0px 0px 5px white;
+    }
+
+    .open-icon::before,
+    .open-icon::after {
+        content: '';
+        display: block;
+        transition: transform 0.3s;
+    }
+
+    .open-icon::before {
+        transform: translateY(-6.5px);
+    }
+
+    .open-icon::after {
+        transform: translateY(4px);
+    }
+
+    nav.is-open .open-icon {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    nav.is-open .open-icon::before {
+        transform: translateY(0px) rotate(45deg);
+        margin-bottom: 2px;
+        background: white;
+        box-shadow: none;
+    }
+
+    nav.is-open .open-icon::after {
+        transform: translateY(-3.7px) rotate(-45deg);
+        background: white;
+        box-shadow: none;
+    }
+
+    ul {
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        width: 100vw;
+        transition: transform 0.5s, opacity 0.3s;
+    }
+
+    nav.is-open ul {
+        transform: none;
+        opacity: 1;
+    }
+
+    nav:not(.is-open) ul {
+        pointer-events: none;
+    }
+
+    a {
+        text-decoration: none;
+        color: black;
+    }
+
+    li {
+        font-size: 20px;
+        text-transform: uppercase;
+        font-family: 'Quattrocento', serif;
+        color: white;
+        margin: 15px;
+    }
+
+        /* Fin menu burger */
+
+        /* paralax css */
+
+    .pimg1, .pimg2, .pimg3, .pimg4, .pimg5 {
+        position: relative;
+        background-size: cover;
+        background-attachment: fixed;
+        z-index: 1;
+    }
+
+    .pimg2, .pimg3, .pimg4, .pimg5 {
+        min-height: 214px;
+        z-index: 0;
+    }
 
 
-p {
-  font-family: "Avenir";
-  font-size: 14px;
-}
+    .pimg1 {
+        background-image: url("image/image_1.jpg");
+        height: 100vh;
+        opacity: 0.90;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
-.product__desc p {
-  margin:30px 0px 30px 0px;
-}
+    .pimg2 {
+        background-image: url("image/image_2.jpg");
+    }
 
-section {
-  min-height: 65vh;
-}
+    .pimg3 {
+        background-image: url("image/image_3.jpg");
+    }
 
-.produit_box, .article_box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: 5px 15px 5px 15px;
-}
+    .pimg4 { 
+        background-image: url("image/image_4.jpg");
+    }
 
+    .pimg5 {
+        background-image: url("image/image_5.jpg");
+    }
 
-.button {
-  background-color: black;
-  color: white;
-  display: inline-block;
-  padding: 15px 25px
-}
+        /* parallax css end */
 
-.titre_article {
-  margin: 30px 15px 30px 15px;
-}
+    .desk{
+        display: none;
+    }
 
-.image-article { 
-  width: 500px;
-}
-  
-.description {
-  font-size: 14px;
-  margin: 30px 19px 30px 19px;
-  text-align: justify;
-  font-family: "Avenir";
-  font-style: normal;
-  line-height: 19px;
-}
+    .mob{
+        display: block;
+    }
 
-  /* menu burger  */
+    header {
+        display: none;
+    }
 
-nav {
-  position: fixed;
-  background-color: rgba(0, 0, 0, 0.7);
-  height: 100vh;
-  width: 100vw;
-  transition: top  1s;
-  top: -120%;
-}
-
-nav.is-open {
-  height: 100vh;
-  width: 100vw;
-  border-radius: 0;
-  right: 0;
-  top: 0; 
-  z-index: 1;
-}
-
-.open {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 15px;
-  left: 15px;
-  height: 50px;
-  width: 50px;
-  cursor: pointer;
-  z-index: 1;
-}
-
-.open-icon,
-.open-icon::before,
-.open-icon::after {
-  width: 30px;
-  height: 2px;
-  background: black;
-  box-shadow: 0px 0px 5px white;
-}
-
-.open-icon::before,
-.open-icon::after {
-  content: '';
-  display: block;
-  transition: transform 0.3s;
-}
-
-.open-icon::before {
-  transform: translateY(-6.5px);
-}
-
-.open-icon::after {
-  transform: translateY(4px);
-}
-
-nav.is-open .open-icon {
-  background-color: transparent;
-  box-shadow: none;
-}
-
-nav.is-open .open-icon::before {
-  transform: translateY(0px) rotate(45deg);
-  margin-bottom: 2px;
-  background: white;
-  box-shadow: none;
-}
-
-nav.is-open .open-icon::after {
-  transform: translateY(-3.7px) rotate(-45deg);
-  background: white;
-  box-shadow: none;
-}
-
-ul {
-  top: 0;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  width: 100vw;
-  transition: transform 0.5s, opacity 0.3s;
-}
-
-nav.is-open ul {
-  transform: none;
-  opacity: 1;
-}
-
-nav:not(.is-open) ul {
-  pointer-events: none;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-li {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-family: 'Quattrocento', serif;
-  color: white;
-  margin: 15px;
-}
-
-/* Fin menu burger */
-
-/* paralax css */
-.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
-  position: relative;
-  background-size: cover;
-  background-attachment: fixed;
-  z-index: 1;
-}
-
-.pimg2, .pimg3, .pimg4, .pimg5 {
-  min-height: 214px;
-  z-index: 0;
-}
-
-
-.pimg1 {
-  background-image: url("image/image_1.jpg");
-  height: 100vh;
-  opacity: 0.90;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.pimg2 {
-  background-image: url("image/image_2.jpg");
-}
-
-.pimg3 {
-  background-image: url("image/image_3.jpg");
-}
-
-.pimg4 { 
-  background-image: url("image/image_4.jpg");
-}
-
-.pimg5 {
-  background-image: url("image/image_5.jpg");
-}
-/* parallax css end */
-
-.desk{
-  display: none;
-}
-.mob{
-  display: block;
-}
-
-header {
-  display: none;
-}
 @media (min-width: 728px) {
 
-  #nav {
-    display: none;
-  }
-  .sticky {
-    position: fixed;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.8);
-  }
-  .barre-menu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .text {
-    font-family: "Quattrocento";
-    margin: 0px 190px 0px 190px;
-    text-decoration: none;
-    color: black;
-  }
-  
-  .logo {
-    height: 65px;
-    width: auto;
+    #nav {
+        display: none;
+    }
 
-  } /**/
+    .sticky {
+        position: fixed;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        background-color: rgba(255, 255, 255, 0.8);
+    }
 
-.mob{
-  display: none;
-}
-.desk{
-  display: block;
-}
+    .barre-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.produit_box{
-  flex-direction: row;
-  justify-content: space-around;
-  max-width: 1080px;
-  margin: 0 auto;
-}
+    .text {
+        font-family: "Quattrocento";
+        margin: 0px 190px 0px 190px;
+        text-decoration: none;
+        color: black;
+    }
 
-h2.desk {
-  margin-bottom: 60px;
-}
+    .logo {
+        height: 65px;
+        width: auto;
+    }
 
-.product__desc p {
-    
-    margin-bottom: 35px;
-}
-.product__desc {
-  text-align: left;
-    max-width: 325px;
-}
-.product {
-  width: 250px;
-}
-.pimg2, .pimg3, .pimg4, .pimg5 {
-  min-height: 400px;
-}
-/* nav bar */
+        /**/
 
-}
+    .mob{
+        display: none;
+    }
+
+    .desk{
+        display: block;
+    }
+
+    .produit_box{
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+
+    h2.desk {
+        margin-bottom: 60px;
+    }
+
+    .product__desc p {
+        margin-bottom: 35px;
+    }
+
+    .product__desc {
+        text-align: left;
+        max-width: 325px;
+    }
+        
+    .product {
+        width: 250px;
+    }
+
+    .pimg2, .pimg3, .pimg4, .pimg5 {
+        min-height: 400px;
+    }
+        /* nav bar */
