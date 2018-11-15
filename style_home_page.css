@@ -265,6 +265,33 @@ li {
 
 @media (min-width: 728px) {
 
+  .sticky {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  .barre-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .text {
+    font-family: "Quattrocento";
+    margin: 0px 190px 0px 190px;
+    text-decoration: none;
+    color: black;
+  }
+  
+  .logo {
+    height: 65px;
+    width: auto;
+
+  } /**/
+
 .mob{
   display: none;
 }
@@ -297,4 +324,6 @@ h2.desk {
 .pimg2, .pimg3, .pimg4, .pimg5 {
   min-height: 400px;
 }
+/* nav bar */
+
 }
