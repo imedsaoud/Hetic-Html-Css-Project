@@ -38,6 +38,8 @@
         flex-direction: column;
         text-align: center;
         align-items: center;
+        height: 85px; 
+        width: 65;
     }
 
     .description_p1 {
