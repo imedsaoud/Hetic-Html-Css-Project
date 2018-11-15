@@ -94,10 +94,6 @@
         margin: 30px 15px 30px 15px;
     }
 
-    .image_article {
-        width: 240px;
-        height: 150px;
-
     .description {
         font-size: 14px;
         margin: 30px 19px 30px 19px;
@@ -343,8 +339,5 @@
     .pimg2, .pimg3, .pimg4, .pimg5 {
         min-height: 400px;
     }
-    
-    .image_article { 
-        width: 10%;
-    }
+   
         /* nav bar */
