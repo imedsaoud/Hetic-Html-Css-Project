@@ -263,8 +263,14 @@ li {
   display: block;
 }
 
+header {
+  display: none;
+}
 @media (min-width: 728px) {
 
+  #nav {
+    display: none;
+  }
   .sticky {
     position: fixed;
     width: 100%;

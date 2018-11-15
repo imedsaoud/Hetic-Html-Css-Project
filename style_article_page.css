@@ -144,18 +144,22 @@ li {
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   height: 65px;
   box-shadow: 0px 0.2px 25px silver;
 }
 
 .logo {
-  height: 65px;
+  height: 45px;
   width: auto;
+}
+
+h1, h2, .fin {
+  margin: 30px 15px 30px 15px;
 }
 
 h1 {
   font-size: 24px;
-  margin: 30px 15px 30px 15px;
   text-align: center;
   font-family: "Quattrocento";
   font-weight: bold;
@@ -163,7 +167,6 @@ h1 {
 
 h2 {
   font-size: 15px;
-  margin: 30px 15px 30px 15px;
   text-align: justify;
   font-family: "Avenir";
   font-style: oblique;
@@ -189,9 +192,8 @@ h2 {
   line-height: 19px;
 }
 
-.messagefin {
+.fin {
   text-align: center;
-  margin: 30px 15px 30px 15px;    
   font-size: 14px;    
   font-family: "Avenir";
   font-weight: bold;
@@ -199,12 +201,15 @@ h2 {
   line-height: 19px;
 }
 
-h3 {
-  font-size: 13px;
+.next-article {
+  display: flex;
+  width: 100vw;
+  justify-content: flex-end;
+}
+
+.link {
+  font-size: 16px;
   text-decoration: underline;
   color: black;
-  display: flex;
-  margin-right: 10px;
-  width: 80px;
-  height: 10px;
+  margin: 15px 19px 30px 0;   
 }
