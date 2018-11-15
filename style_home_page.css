@@ -33,11 +33,68 @@
   font-style: normal;
 }
 
-body {
-  margin: 0;
+.logo_box {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+.description_p1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 45px;
+}
+
+h2 {
+  font-family: "Quattrocento";
+  font-weight: bold;
+}
+
+.product {
+  height: 150px;
+  width: 150px;
 }
 
 
+p {
+  font-family: "Avenir";
+  font-size: 14px;
+}
+
+section {
+  min-height: 65vh;
+}
+
+.produit_box, .article_box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  margin: 5px 15px 5px 15px;
+}
+
+.button {
+  background-color: black;
+  color: white;
+  padding: 2vh;
+}
+
+.titre_article {
+  margin: 30px 15px 30px 15px;
+}
+
+.description {
+  font-size: 14px;
+  margin: 30px 19px 30px 19px;
+  text-align: justify;
+  font-family: "Avenir";
+  font-style: normal;
+  line-height: 19px;
+}
 
   /* menu burger  */
 
@@ -150,16 +207,7 @@ li {
 
 /* Fin menu burger */
 
-h2 {
-  font-family: "Quattrocento";
-  font-weight: bold;
-}
-
-p {
-  font-family: "Avenir";
-  font-size: 14px;
-}
-
+/* paralax css */
 .pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
   position: relative;
   background-size: cover;
@@ -171,6 +219,7 @@ p {
   min-height: 214px;
   z-index: 0;
 }
+
 
 .pimg1 {
   background-image: url("image/image_1.jpg");
@@ -197,63 +246,4 @@ p {
 .pimg5 {
   background-image: url("image/image_5.jpg");
 }
-
-section {
-  min-height: 300px;
-}
-
-section {
-  min-height: 75vh;
-}
-
-.description_p1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 45px;
-}
-
-.logo_box {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-}
-
-.produit_1_box, .produit_2_box, .produit_3_box, .produit_4_box, .article_1, .article_2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  text-align: center;
-  align-items: center;
-}
-
-.produit_2_box {
-  margin-right: 5px;
-  margin-left: 5px; 
-}
-
-.produit_3_box {
-  margin-right: 15px;
-  margin-left: 15px; 
-}
-
-.button {
-  background-color: black;
-  color: white;
-  padding: 2vh;
-}
-
-.titre_article {
-  margin: 30px 15px 30px 15px;
-}
-
-.description {
-  font-size: 14px;
-  margin: 30px 19px 30px 19px;
-  text-align: justify;
-  font-family: "Avenir";
-  font-style: normal;
-  line-height: 19px;
-}
+/* parallax css end */
