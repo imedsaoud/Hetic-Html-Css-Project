@@ -150,7 +150,7 @@ header {
 }
 
 .logo {
-  height: 45px;
+  height: 35px;
   width: auto;
 }
 
@@ -192,7 +192,7 @@ h2 {
   line-height: 19px;
 }
 
-.fin {
+.end {
   text-align: center;
   font-size: 14px;    
   font-family: "Avenir";
@@ -216,33 +216,21 @@ h2 {
 
 @media (min-width: 500px) {
 
-.tweet1 {
-  width: 50%;
-}
+  .tweet1, .tweet2 {
+    width: 35%;
+  }
 
-.tweet2 {
-  width: 50%;
-}
+  h2, .end{
+    font-size: 20px;
+    line-height: 120%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 
-h2 {
-  font-size: 24px;
-  line-height: 120%;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.description {
-  font-size: 20px;
-  line-height: 120%;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-
-.fin {
-  font-size: 22px; 
-  line-height: 120%;
-  margin-left: 20%;
-  margin-right: 20%;
-}
-  
+  .description {
+    font-size: 16px;
+    line-height: 150%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
