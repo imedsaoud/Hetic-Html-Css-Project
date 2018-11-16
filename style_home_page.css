@@ -249,7 +249,6 @@ li {
   z-index: 0;
 }
 
-
 .pimg1 {
   background-image: url("image/image_1.jpg");
   height: 100vh;
@@ -329,7 +328,7 @@ header {
   }
 
   .logo {
-    height: 35px;
+    height: 45px;
     width: auto;
   }
 
@@ -411,5 +410,3 @@ header {
     
   }
 }
-
-
