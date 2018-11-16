@@ -150,9 +150,11 @@ header {
 }
 
 .logo {
-  height: 35px;
+  height: 45px;
   width: auto;
 }
+
+
 
 h1, h2, .fin {
   margin: 30px 15px 30px 15px;
@@ -214,6 +216,10 @@ h2 {
   margin: 15px 19px 30px 0;   
 }
 
+.bar-menu {
+  display: none;
+}
+
 @media (min-width: 500px) {
 
   .tweet1, .tweet2 {
@@ -232,5 +238,24 @@ h2 {
     line-height: 150%;
     margin-left: 20%;
     margin-right: 20%;
+  }
+
+  #nav {
+    display: none;
+  }
+
+  .bar-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header-desk {
+    margin: 0 10% 0 10%;
+    color: black;
+  }
+
+  header {
+    display: none;
   }
 }
