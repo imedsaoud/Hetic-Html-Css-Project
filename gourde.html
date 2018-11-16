@@ -1,113 +1,155 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="reset.css" />
-    <link rel="stylesheet" href="style_produit_page.css" />
-    <link rel="icon" href="image/q.png">
-    <title>Gourde</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="reset.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="style_home_page.css"/>
+    <link rel="icon" href="image/logo-sans.png">
+    <title>Quechua</title>
+    <link rel="icon" href="image/logo-sans.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script defer src="main.js"></script>
   </head>
- 
   <body>
-    <!--Nav bar mobile-->
-  <header>
-      <a href="index.html"> <img class="logo" src="image/logo-sans.png" alt="Home"/> </a>
-    </header>
-    <!--Nav bar Desktop-->
-  <!--header desk-->
-  <header class="bar-menu">
+    <!--FIRST PAGE-->
+    <section class="pimg1" id="accueil">
+      <!--Burger menu-->
+      <nav id="nav">
+        <ul>
+          <a href="polaire.html">
+            <li>Produits</li>
+          </a>
+          <a href="#accueil">
+            <li>Accueil</li>
+          </a>
+          <a href="article.html">
+            <li>Actualités</li>
+          </a>
+        </ul>
+        <div class="open" id="open">
+          <div class="open-icon"></div>
+        </div>
+      </nav>
+      <!--Fin Burger menu-->
+      <div class="logo-box">
+        <img src="image/logo.png" class="logo-white" alt="logo-white">
+        <p class="description-p1">
+          Montagne | Randonnée | Nature
+        </p>
+      </div>
+      <div class="line-white">
+        <img src="image/ligne.png" alt="line" class="line-white-picture">
+      </div>
+    </section>
+    <!--header desk-->
+    <header class="bar-menu">
       <a class="header-desk" href="polaire.html" title="Produits">
         <p>Produits</p>
       </a>
-      <a href="index.html" title="Accueil"> <img class="logo" src="image/logo-sans.png" alt="Logo Quechua"/></a>
-      <a class="header-desk" href="article.html" title="Actualités">
+      <a href="#" title="Accueil"> <img class="logo" src="image/logo-sans.png" alt="Logo Quechua"/></a>
+      <a class="header-desk" href="#news" title="Actualités">
         <p>Actualités</p>
       </a>
     </header>
     <!--fin header desk-->
-    <nav id="nav">
-      <ul>
+    <!--PRODUCT 1 Mobile-->
+    <section class="product-box-1">
+      <div>
+        <h2 class="mob">Polaire Winterfall</h2>
+        <img class="product" src="image/polaire_1.png" alt="Polaire" >
+      </div>
+      <!--Desktop-->
+      <div class="product-desk">
+        <h2 class="desk">Polaire Winterfall</h2>
+        <p>Conçu pour apporter de la chaleur et de la légèreté lors de toutes vos randonnées. </p>
         <a href="polaire.html">
-          <li>Produits</li>
+          <div class="button">Découvrir</div>
         </a>
-        <a href="index.html">
-          <li>Accueil</li>
+      </div>
+    </section>
+    <!--PRODUCT 2 Mobile-->
+    <div class="pimg2"></div>
+    <section class="product-box-2">
+      <div>
+        <h2 class="mob">Tente green night</h2>
+        <img class="product" src="image/tente_1.png" alt="Tente" >
+      </div>
+      <!--Desktop-->
+      <div class="product-desk">
+        <h2 class="desk">Tente green night</h2>
+        <p>Conçu pour 2 personnes en camping désirant une tente rapide à monter et à démonter. </p>
+        <a href="tente.html">
+          <div class="button">Découvrir</div>
         </a>
-        <a href="article.html">
-          <li>Actualités</li>
+      </div>
+    </section>
+    <!--PRODUCT 3 Mobile-->
+    <div class="pimg3"></div>
+    <section class="product-box-1">
+      <div>
+        <h2 class="mob">The Gourde Storm</h2>
+        <img class="product" src="image/gourde_1.png" alt="Gourde" >
+      </div>
+      <!--Desktop-->
+      <div class="product-desk">
+        <h2 class="desk">The Gourd Storm</h2>
+        <p>Nos concepteurs ont développé cette gourde traditionnelle en aluminium avec un bouchon à vis.</p>
+        <a href="gourde.html">
+          <div class="button">Découvrir</div>
         </a>
-      </ul>
-      <div class="open" id="open">
-        <div class="open-icon"></div>
-      </div>
-    </nav>
-    <div class="other_nav">
-      <a href="polaire.html" title="Polaire"><img class="polaire" src="image/produit_1.png" alt="Polaire" /></a>
-      <a href="tente.html" title="Tente"><img class="tente" href="" src="image/produit_2.png" alt="Tente" /></a>
-      <a href="sac.html" title="Sac"><img class="sac" href="" src="image/produit_4.png" alt="Sac" /></a>
-      <a href="gourde.html" title="Gourde"><img class="gourde" href="" src="image/produit_3.png" alt="Gourde" /></a>
-    </div>
-    <section class="box">
-      <h1>The Gourde Storm</h1>
-      <div class="back-product">
-        <img class="product" src="image/gourde_1.png" alt="Gourde" />
-      </div>
-      <div class="back-description">
-        <p class="description">Conçu pour faire renaître une gourde traditionnelle en aluminium simple et fiable pour les randonnées.</p>
       </div>
     </section>
-    <section class="box box--with-headline">
-      <h2 class="visible--xs">Avantages</h2>
-      <div class="product__box">
-        <div class="back-product">
-          <img class="product" src="image/gourde2.jpg" alt="Gourde" />
-        </div>
-        <div class="product__box__text-box">
-          <h2 class="hidden--xs">Avantages</h2>
-          <div class="back-description">
-            <p class="description">Facilité d’ouverture et de fermeture grâce au bouchon à vis standard qui s’ouvre et se ferme sur 3 tours. L’aluminium de cette gourde offre une solidité à tout épreuve malgré qu’elle soit très légère.</p>
-          </div>
-        </div>
+    <!---PRODUCT 4 Mobile-->
+    <div class="pimg4"></div>
+    <section class="product-box-2">
+      <div>
+        <h2 class="mob">Sac à dos Forclaz</h2>
+        <img class="product" src="image/sac_1.png" alt="Sac" >
+      </div>
+      <!--Desktop-->
+      <div class="product-desk">
+        <h2 class="desk">Sac à dos Forclaz</h2>
+        <p>Conçu pour l'homme ou la femme pratiquant la randonnée sur 2 à 3 jours.</p>
+        <a href="sac.html">
+          <div class="button">Découvrir</div>
+        </a>
       </div>
     </section>
-    <section class="box">
-      <div class="box--without-headline">
-        <div class="back-product">
-          <img class="product" src="image/gourde5.jpg" alt="Gourde" />
+    <!--- News -->
+    <div class="pimg5"></div>
+    <section id="news">
+      <!--Anchor for burger menu-->
+      <div class="article-box">
+        <div class="title-article-box">
+          <a href="article.html">
+            <h2 class="title-article">Quand Quechua se moque de Kanye West</h2>
+          </a>
         </div>
-        <div class="back-description">
-          <p class="description">Le bouchon de cette gourde est très pratique du fait qu’il soit muni d’un trou qui permet de la porter à la main ou de l’accrocher grâce à un mousqueton.</p>
+        <div class="picture-article"> <a href="article.html"> <img src="image/image_article_1.png" alt="Article"> </a></div>
+        <div class="description">
+          <p class="text">Quechua a su créer un buzz retentissant en se moquant
+            d’une publication de Kanye West. Le rappeur détenteur de la marque Yeezy a
+            publié une photo du prochain modèle ressemblant étrangement aux chaussures
+            de randonnée Quechua. Une bonne aubaine pour la marque française !
+          </p>
         </div>
       </div>
     </section>
-    <section class="box box--with-headline">
-      <h2 class="visible--xs">Composition</h2>
-      <div class="product__box">
-        <div class="back-product">
-          <img class="product" src="image/gourde3.jpg" alt="Gourde" />
+    <section>
+      <div class="article-box">
+        <div class="title-article-box">
+          <a href="article2.html">
+            <h2 class="title-article">La tente 2 Seconds de Quechua fête ses 10 ans</h2>
+          </a>
         </div>
-        <div class="product__box__text-box">
-          <h2 class="hidden--xs"> Composition</h2>
-          <div class="back-description">
-            <p class="description">La gourde est faite d’aluminium à 95% et de polyamide à 5%.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="box box--with-headline">
-      <h2 class="visible--xs">Précautions</h2>
-      <div class="product__box">
-        <div class="back-product">
-          <img class="product" src="image/gourde4.jpg" alt="Gourde" />
-        </div>
-        <div class="product__box__text-box">
-          <h2 class="hidden--xs">Précautions</h2>
-          <div class="back-description">
-            <p class="description">Pour stocker la gourde et préserver sa durabilité, laver et sécher la avant stockage. Stocker la dans un endroit propre et sec boisson ouvert. L’aluminium n’est pas un matériau isotherme, cette gourde accepte les boissons chaudes et les boissons gazeuse. Ne pas utiliser avec des corps gras comme les produits laitiers ou les huiles, ne pas utiliser avec des boissons acides telles que les jus de fruits et les boissons énergisante.</p>
-          </div>
+        <div class="picture-article"> <a href="article2.html"> <img src="image/image_article_2.jpg" alt="Article"></a> </div>
+        <div class="description">
+          <p class="text">Pour célébrer les 10 ans de la tente 2 Seconds,
+            Quechua lance avec l’agence Orès une campagne
+            autour du partage histoires et d'émotions
+            vécues avec ces tentes devenues emblématiques.
+          </p>
         </div>
       </div>
     </section>
