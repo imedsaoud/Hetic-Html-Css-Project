@@ -33,19 +33,43 @@
   font-style: normal;
 }
 
-.logo_box {
+.logo-white {
+  width: 30%;
+}
+
+.logo-box {
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
 }
 
-.description_p1 {
+.description-p1 {
   display: flex;
-  justify-content: center;
   align-items: center;
   color: white;
   padding: 45px;
+}
+
+.line-white {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+  
+.line-white-picture {
+  position: absolute;
+  bottom: -30px;
+  right: 5px;
+}
+  
+.header-desk {
+  margin: 0 10% 0 10%;
+}
+
+.header-desk:hover {
+  opacity: 0.5;
+  transition: 1s;
 }
 
 h2 {
@@ -56,34 +80,24 @@ h2 {
 h2.mob {
   margin-bottom: 30px;
 }
+
+.product-desk p {
+  margin: 30px 0 30px 0;
+}
+
 .product {
   width: 150px;
 }
 
-
 p {
   font-family: "Avenir";
+  font-style: normal;
   font-size: 14px;
 }
 
-.product__desc p {
+.product-desk p {
   margin:30px 0px 30px 0px;
 }
-
-section {
-  min-height: 65vh;
-  display: flex;
-}
-
-.produit_box, .produit_box_2, .article_box {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  margin: 5px 15px 5px 15px;
-}
-
 
 .button {
   background-color: black;
@@ -92,17 +106,22 @@ section {
   padding: 15px 25px
 }
 
-.titre_article {
-  margin: 30px 15px 30px 15px;
+.button:hover {
+  opacity: 0.5;
+  transition: 1s;
 }
 
-.description {
-  font-size: 14px;
-  margin: 30px 19px 30px 19px;
-  text-align: justify;
-  font-family: "Avenir";
-  font-style: normal;
-  line-height: 19px;
+section {
+  min-height: 65vh;
+}
+
+.product-box-1, .product-box-2, .article-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  margin: 5px 15px 5px 15px;
 }
 
   /* menu burger  */
@@ -214,10 +233,11 @@ li {
   margin: 15px;
 }
 
-/* Fin menu burger */
+  /* Fin menu burger */
 
-/* paralax css */
-.pimg1, .pimg2, .pimg3, .pimg4, .pimg5{
+  /* paralax css */
+
+.pimg1, .pimg2, .pimg3, .pimg4, .pimg5 {
   position: relative;
   background-size: cover;
   background-attachment: fixed;
@@ -255,23 +275,44 @@ li {
 .pimg5 {
   background-image: url("image/image_5.jpg");
 }
-/* parallax css end */
 
-.desk{
+  /* parallax css end */
+
+.desk {
   display: none;
 }
-.mob{
+
+.mob {
   display: block;
 }
 
 header {
   display: none;
 }
+
+.title-article {
+  margin: 30px 15px 30px 15px;
+}
+
+.description {
+  font-size: 14px;
+  margin: 30px 10% 30px 10%;
+  text-align: center;
+  font-family: "Avenir";
+  font-style: normal;
+  line-height: 160%;
+}
+
+.picture-article a img {
+  width: 60%;
+}
+
 @media (min-width: 728px) {
 
   #nav {
     display: none;
   }
+
   .sticky {
     position: fixed;
     width: 100%;
@@ -280,62 +321,95 @@ header {
     z-index: 1;
     background-color: rgba(255, 255, 255, 0.8);
   }
-  .barre-menu {
+
+  .bar-menu {
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
+  .logo {
+    height: 35px;
+    width: auto;
+  }
+
+  .logo:hover {
+    opacity: 0.5;
+    transition: 0.5s;
+  }
+
+    /**/
+
+  .mob {
+    display: none;
+  }
+
+  .desk {
+    display: block;
+  }
+
+  .product-box-1 {
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  .product-box-2 {
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    max-width: 1080px;
+    margin: 0 auto;
+  }
+
+  h2.desk {
+    margin-bottom: 60px;
+  }
+
+  .product-desk p {
+    margin-bottom: 35px;
+  }
+
+  .product-desk {
+    text-align: left;
+    max-width: 325px;
+  }
+    
+  .product {
+    width: 250px;
+  }
+
+  .pimg2, .pimg3, .pimg4, .pimg5 {
+    min-height: 400px;
+  }
+
+  .title-article {
+    font-size: 24px;
+  }
+
+  .title-article:hover {
+    opacity: 0.7;
+    transition: 0.5s;
+  }
+
+  .picture-article a img {
+    width: 60%;
+  }
+
   .text {
     font-family: "Quattrocento";
-    margin: 0px 190px 0px 190px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
+    text-align: center;
   }
-  
-  .logo {
-    height: 65px;
-    width: auto;
 
-  } /**/
-
-.mob{
-  display: none;
-}
-.desk{
-  display: block;
-}
-
-.produit_box{
-  flex-direction: row;
-  justify-content: space-around;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-.produit_box_2{
-  flex-direction: row-reverse;
-  justify-content: space-around;
-  max-width: 1080px;
-  margin: 0 auto;
-}
-
-h2.desk {
-  margin-bottom: 60px;
-}
-
-.product__desc p {
+  .article-box {
+    margin: 0 30% 0 30%; 
+      
+    /* nav bar */
     
-    margin-bottom: 35px;
+  }
 }
-.product__desc {
-  text-align: left;
-    max-width: 325px;
-}
-.product {
-  width: 250px;
-}
-.pimg2, .pimg3, .pimg4, .pimg5 {
-  min-height: 400px;
-}
-/* nav bar */
+
+
