@@ -1,2 +1,2 @@
-# hetic-w1p2021-07-azote
-https://quechua-project.netlify.com
+# Hetic project [Html&Css] 
+4 day to make a static website: https://quechua-project.netlify.com
